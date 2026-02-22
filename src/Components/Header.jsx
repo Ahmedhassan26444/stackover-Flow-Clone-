@@ -1,7 +1,6 @@
 import React from 'react'
 import Logo from '../assets/Logo.png'
 import { Search } from 'lucide-react'
-
 const Header = () => {
   return (
     <div className = ' header flex flex-row items-center mb-11' >
@@ -20,7 +19,9 @@ const Header = () => {
               />
             </div>
             <div className=' h-8 gap-1'>
-              <button className=' items-center p-2 rounded-md  hover:bg-[#D6E8FA] border focus:ring-blue-400  text-blue-600'>
+              <button className=' items-center p-2 rounded-md
+                hover:bg-[#D6E8FA] border focus:ring-blue-400
+                  text-blue-600'>
                 Login-in
               </button>
             </div>
