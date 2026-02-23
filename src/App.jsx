@@ -2,6 +2,7 @@ import Header from "./Components/Header"
 import Navbar from "./Components/Navbar"
 import NewestQuestion from "./Components/NewestQuestion"
 import Rightwidgets from "./Components/Rightwidgets"
+import Footer from "./Components/Footer"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         </div>
 
       </div>
+      <Footer />
     </>
   )
 }

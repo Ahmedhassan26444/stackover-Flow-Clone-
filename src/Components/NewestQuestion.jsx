@@ -20,7 +20,7 @@ const NewestQuestion = () => {
         </p>
         <div className="flex items-center gap-2">
           <div className="flex border rounded-md overflow-hidden text-sm">
-            <button className="px-3 py-1.5 bg-gray-200 font-normal">
+            <button className="px-3 py-1.5 bg-gray-200 font-medium">
               Newest
             </button>
             <button className="px-3 py-1.5">
