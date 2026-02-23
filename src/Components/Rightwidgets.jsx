@@ -53,7 +53,7 @@ const Rightwidgets = () => {
       </div>
 
       {/* Collectives Card */}
-      <div className="mt-2 w-80 mb-10 bg-white border border-[#0702021a] 
+      <div className="mt-2 w-80  bg-white border border-[#0702021a] 
       rounded-sm p-4">
         
         {/* Top Row */}
