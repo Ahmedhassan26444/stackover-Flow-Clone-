@@ -2,9 +2,9 @@ import React from 'react'
 
 const NewestQuestion = () => {
   return (
-    <div className=' mb-4'>
+    <div className=' mb-4 mt-8'>
       {/* Row 1: Title + Ask Question */}
-      <div className='flex items-center justify-between mb-4'>
+      <div className='flex items-center justify-between mb-8'>
         <h1 className='text-2xl font-semibold text-gray-800'>
           Newest Questions
         </h1>
@@ -18,7 +18,7 @@ const NewestQuestion = () => {
         <p className="text-gray-700 text-lg">
           24,172,760 questions
         </p>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 ">
           <div className="flex border rounded-md overflow-hidden text-sm">
             <button className="px-3 py-1.5 bg-gray-200 font-medium">
               Newest

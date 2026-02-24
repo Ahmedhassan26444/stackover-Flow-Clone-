@@ -3,9 +3,10 @@ import { Pencil, MessageSquare } from "lucide-react";
 import Microsoft from "../assets/microsoft.png";
 import PHP from "../assets/php.png";
 import NLP from "../assets/nlp.png";
+
 const Rightwidgets = () => {
   return (
-    <div className="w-80 ml-6 ">
+    <div className="w-80 ml-6  mt-8">
       <div className="bg-[#FDF7E7] border border-[#f1e5bc] rounded-sm p-4">
         
         <h1 className="font-bold mb-2">
@@ -16,6 +17,13 @@ const Rightwidgets = () => {
           <Pencil size={14} className="mt-1 shrink-0 text-gray-600" />
           <p className="text-sm text-gray-600">
             Data is the new oil, and your database is the only way to extract it
+          </p>
+        </div>
+
+        <div className="flex items-start gap-2 mb-4">
+          <Pencil size={14} className="mt-1 shrink-0 text-gray-600" />
+          <p className="text-sm text-gray-600">
+            Defense against uploads: Q&A with OSS file scanner, pompelmi
           </p>
         </div>
 
@@ -84,7 +92,7 @@ const Rightwidgets = () => {
         </div>
 
         <p className="text-[14px] pl-1 text-gray-600">
-          A collective for developers to engage, share, and learn about Microsoft Azure’s open-
+          A collective for developers to engage, share, and learn about Microsoft Azure's open-
         </p>
 
         {/* PHP */}

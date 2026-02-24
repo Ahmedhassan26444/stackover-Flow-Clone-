@@ -3,7 +3,7 @@ import Logo from '../assets/Logo.png'
 import { Search } from 'lucide-react'
 const Header = () => {
   return (
-    <div className = ' header flex flex-row items-center mb-11' >
+    <div className = ' header flex flex-row items-center ' >
         <img src= {Logo} alt=" logo png" className='h-12' />
         <div className='flex gap-1 items-center   '>
             <a href="#" className=' hover:bg-gray-200 rounded-full px-3 py-2 text-[16px] text-shadow-gray-600 font-light' >About</a>
