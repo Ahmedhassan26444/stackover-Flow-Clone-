@@ -9,8 +9,8 @@ const Navbar = () => {
 
   return (
 
-    <div className='flex flex-col w-50 pt-2 h-screen overflow-y-auto
-    border-r border-gray-200 bg-white'>
+    <div className='flex flex-col w-50 sticky top-0 h-screen pt-8 
+    overflow-y-auto border-r border-gray-200 bg-white self-start'>
 
       <a href="#" className='pl-1 py-2 text-sm hover:bg-gray-100 flex items-center gap-3'><Home className="w-5 h-5" />Home</a>
       <a href="#" className='pl-1 py-2 text-sm font-bold bg-gray-100 flex items-center gap-3'><MessageCircleQuestion className="w-5 h-5" />Questions</a>
