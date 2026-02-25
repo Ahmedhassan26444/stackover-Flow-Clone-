@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="grid max-w-1264px mx-auto grid-cols-2 md:grid-cols-4 bg-[#0C0D0E] px-6 pt-12">
       {/* Column 1 */}
       <div>
-        <img className="h-15" src={Footerimg} alt="footer logo" />
+        <img className="h-15 " src={Footerimg} alt="footer logo" />
         <div className="text-gray-100 font-normal pt-3 pb-4">
           <h1>Stack Overflow</h1>
         </div>
