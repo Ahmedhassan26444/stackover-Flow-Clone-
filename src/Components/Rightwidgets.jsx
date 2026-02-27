@@ -17,14 +17,15 @@ const hotQuestions = [
   { icon: "https://cdn.sstatic.net/Sites/biology/Img/favicon.ico", text: "Does being bipedal set a hard limit on the size of herbivores?" },
   { icon: "https://cdn.sstatic.net/Sites/chemistry/Img/favicon.ico", text: "What do the temperatures in a VLE-diagram represent and does the region between the curves have meaning?" },
   { icon: "https://cdn.sstatic.net/Sites/math/Img/favicon.ico", text: "What is the angle? (five circles in a triangle)" },
-]
+];
 
 const Rightwidgets = () => {
   return (
-    <div className="w-80 ml-6 mt-8">
-
+    <div className="w-80 ml-6 mr-6 mt-8">
+      
       {/* Card 1 - Overflow Blog */}
-      <div className="bg-[#FDF7E7] border border-[#f1e5bc] rounded-sm p-4">
+      <div className="bg-[#FDF7E7] border border-[#f1e5bc] rounded-sm p-4 
+      w-72">
         <h1 className="font-bold mb-2">The Overflow Blog</h1>
         <div className="flex items-start gap-2 mb-4">
           <Pencil size={14} className="mt-1 shrink-0 text-gray-600" />
@@ -51,11 +52,12 @@ const Rightwidgets = () => {
       </div>
 
       {/* Card 2 - Collectives */}
-      <div className="mt-2 w-80 bg-white border border-[#0702021a] rounded-sm p-4">
+      <div className="mt-2 w-72 bg-white border border-[#0702021a] rounded-sm p-4 ">
         <div className="flex flex-row justify-between">
           <h1 className="font-semibold">Collectives</h1>
           <a className="text-[#604B8F]" href="#">see all</a>
         </div>
+
         <div className="mt-3 flex justify-between items-start">
           <div className="flex flex-row">
             <img className="w-10 h-8 pl-2" src={Microsoft} alt="Microsoft Logo"/>
@@ -66,7 +68,9 @@ const Rightwidgets = () => {
           </div>
           <button className="border text-blue-400 hover:bg-blue-100 border-blue-500 px-3 py-2 text-sm rounded">Join</button>
         </div>
-        <p className="text-[14px] pl-1 text-gray-600">A collective for developers to engage, share, and learn about Microsoft Azure's open-</p>
+        <p className="text-[14px] pl-1 text-gray-600">
+          A collective for developers to engage, share, and learn about Microsoft Azure's open-
+        </p>
 
         <div className="mt-6 flex justify-between items-start">
           <div className="flex flex-row">
@@ -78,7 +82,9 @@ const Rightwidgets = () => {
           </div>
           <button className="border text-blue-400 hover:bg-blue-100 border-blue-500 px-3 py-2 text-sm rounded">Join</button>
         </div>
-        <p className="text-[14px] pl-1 text-gray-600">A collective where developers working with PHP can learn and connect about the open</p>
+        <p className="text-[14px] pl-1 text-gray-600">
+          A collective where developers working with PHP can learn and connect about the open
+        </p>
 
         <div className="mt-6 flex justify-between items-start">
           <div className="flex flex-row">
@@ -90,11 +96,13 @@ const Rightwidgets = () => {
           </div>
           <button className="border text-blue-400 hover:bg-blue-100 border-blue-500 px-3 py-2 text-sm rounded">Join</button>
         </div>
-        <p className="text-[14px] pl-1 text-gray-600">A collective focused on NLP (natural language processing), the transformation or extraction</p>
+        <p className="text-[14px] pl-1 text-gray-600">
+          A collective focused on NLP (natural language processing), the transformation or extraction
+        </p>
       </div>
 
       {/* Card 3 - Hot Network Questions */}
-      <div className="mt-67 mb-10 w-80 bg-white border border-[#0702021a] rounded-sm">
+      <div className="mt-67 mb-10 w-72 bg-white border border-[#0702021a] rounded-sm">
         <div className="px-4 py-3 border-b border-gray-200">
           <h3 className="text-[15px] font-normal text-gray-800">Hot Network Questions</h3>
         </div>
@@ -113,7 +121,9 @@ const Rightwidgets = () => {
           ))}
         </ul>
         <div className="px-4 py-3 border-t border-gray-200">
-          <a href="#" className="text-[13px] text-blue-600 hover:text-blue-800">more hot questions</a>
+          <a href="#" className="text-[13px] text-blue-600 hover:text-blue-800">
+            more hot questions
+          </a>
         </div>
       </div>
 
