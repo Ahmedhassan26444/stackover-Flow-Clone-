@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
 
-    <div className='flex flex-col w-50 sticky top-0 h-screen pt-8 
+    <div className='flex flex-col w-58 sticky top-0 h-screen pt-8 pl-17
     overflow-y-auto border-r border-gray-200 bg-white self-start'>
 
       <a href="#" className='pl-1 py-2 text-sm hover:bg-gray-100 flex items-center gap-3'><Home className="w-5 h-5" />Home</a>
@@ -58,7 +58,7 @@ const Navbar = () => {
       </div>
       <div className='pt-2 items-center text-center'>
         <button className='bg-blue-500 px-6  text-neutral-50 rounded-md 
-        items-center hover:bg-[#0074cc] '>
+        items-center hover:bg-[#0081ccd7] '>
           Try For Free
         </button>
       </div>
