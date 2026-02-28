@@ -399,6 +399,42 @@ const MainContent = () => {
           </div>
         </div>
       </div>
+      <div className="flex flex-row gap-4 border-b border-gray-200 py-4 font-sans">
+        {/* Left Sidebar: Stats */}
+        <div className="flex flex-col items-end w-80px shrink-0 gap-1.5 pt-1">
+          <p className="text-gray-700 text-sm whitespace-nowrap">0 votes</p>
+          <p className="text-gray-500 text-sm whitespace-nowrap">0 answers</p>
+          <p className="text-gray-500 text-sm whitespace-nowrap font-light">
+            4 views
+          </p>
+        </div>
+
+        {/* Right Content: Title, Description, and Tags */}
+        <div className="flex flex-col gap-2">
+          <a
+            href="#"
+            className="text-[#0074cc] hover:text-[#0095ff] text-[17px] font-normal leading-tight"
+          >
+           Is it good design to use dynamic cast?
+          </a>
+          <p className="text-sm text-gray-700 leading-normal line-clamp-2">
+           I am trying to implement password manager on Java right now. I am implementing the vault. I have VaultEntry and VaultFolder classes.
+           VaultEntry has fields id, parentId, name, username, email, password ...
+          </p>
+
+          {/* Tags Section */}
+          <div className="flex flex-row gap-1 mt-1">
+            {["java", "oop"].map((tag) => (
+              <span
+                key={tag}
+                className="px-1.5 py-1 bg-[#e3e6e8] text-black text-xs rounded font-medium hover:bg-[#d6d9dc] cursor-pointer"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
