@@ -8,7 +8,7 @@ import MainContent from "./Components/MainContent"
 function App() {
   return (
     <>
-      <Header className="" /> 
+      <Header/> 
       <div className="flex">
         <Navbar />
         <div className="flex flex-1 px-8">

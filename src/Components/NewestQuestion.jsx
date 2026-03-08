@@ -1,9 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import data from "../maincontext.json";
+
+const options = [
+  { label: "Frequent" },
+  { label: "Score" },
+  { label: "Trending" },
+  { label: "Week" },
+  { label: "Month" },
+  null,
+  { label: "Unanswered (my tags)", dim: true },
+];
 
 const NewestQuestion = () => {
   const [activeSection, setActiveSection] = useState("newest");
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+
   const questions = data["newest"];
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) setOpen(false);
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
   return (
     <div className="mb-4 mt-8">
       {/* Row 1 */}
@@ -24,7 +46,8 @@ const NewestQuestion = () => {
         <p className="text-gray-700 text-lg">24,172,760 questions</p>
 
         <div className="flex items-center gap-2 mr-3">
-          <div className="flex border border-gray-400 rounded-md overflow-hidden text-[12px]">
+          <div className="flex border border-gray-400 rounded-md overflow-visible text-[12px]">
+
             <button
               onClick={() => setActiveSection("newest")}
               className={`px-3 py-1.5 ${activeSection === "newest" ? "bg-gray-200 font-medium" : ""}`}
@@ -59,7 +82,35 @@ const NewestQuestion = () => {
               Unanswered
             </button>
 
-            <button className="px-3 py-1.5 pr-5">More ▼</button>
+            {/* More Dropdown */}
+            <div className="relative" ref={ref}>
+              <button
+                onClick={() => setOpen((o) => !o)}
+                className="px-3 py-1.5 pr-5"
+              >
+                More ▼
+              </button>
+
+              {open && (
+                <div className="absolute left-0 mt-1 w-52 bg-white border border-gray-200 rounded shadow-lg z-50">
+                  {options.map((opt, i) =>
+                    opt === null ? (
+                      <div key={i} className="border-t border-gray-100 my-0.5" />
+                    ) : (
+                      <div
+                        key={opt.label}
+                        className={`px-4 py-2 text-sm hover:bg-gray-100 cursor-pointer ${
+                          opt.dim ? "text-gray-400" : "text-gray-700"
+                        }`}
+                      >
+                        {opt.label}
+                      </div>
+                    )
+                  )}
+                </div>
+              )}
+            </div>
+
           </div>
 
           <button
