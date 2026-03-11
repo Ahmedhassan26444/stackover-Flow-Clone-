@@ -16,7 +16,8 @@ const NewestQuestion = () => {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
 
-  const questions = data["newest"];
+  // ✅ only change here
+  const questions = data[activeSection];
 
   useEffect(() => {
     const handler = (e) => {
