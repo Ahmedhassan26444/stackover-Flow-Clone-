@@ -108,336 +108,48 @@
     "tags" : ["java" ,"oop"]
   }
 
-  ],
-
+  ] ,
 
   "active": [
-    {
-      "id": 1,
-      "title": "AlarmManager with BroadcastReceiver not firing notifications",
-      "description": "Problem Description I am building a nutrition tracker app...",
-      "votes": -1,
-      "answers": 0,
-      "views": 6,
-      "tags": ["android", "kotlin", "push-notification", "jetpack-compose"]
-    },
-    {
-      "id": 2,
-      "title": "Code based implementation of an oData V4-Service throws not implemented when using $groupby",
-      "description": "Ich created an oData V4 Service last week and implemented the code based approach to create the service. I am using the latest version of the SAP Cloud SDK and the latest version of the SAP Cloud Application Programming Model. I have implemented the service and it works fine when I use it with basic queries. However, when I try to use $groupby in my query, I get a not implemented error. I have checked the documentation and it seems that $groupby is supported in the latest version of the SAP Cloud SDK. I have also checked the implementation of the service and it seems that $groupby is not implemented in the code based approach. Is there a way to implement $groupby in the code based approach or is it only supported in the annotation based approach?",
-      "votes": 0,
-      "answers": 0,
-      "views": 7,
-      "tags": ["odata", "abab" ]
-      
-    },
-    
+  {"id":1,"votes":12,"answers":4,"views":145,"title":"AlarmManager with BroadcastReceiver not firing notifications","description":"Problem Description I am building a nutrition tracker app...","tags":["android","kotlin","push-notification","jetpack-compose"]},
+  {"id":2,"votes":8,"answers":3,"views":121,"title":"Code based implementation of an oData V4-Service throws not implemented when using $groupby","description":"Ich created an oData V4 Service last week and implemented the code based approach to create the service. I am using the latest version of the SAP Cloud SDK and the latest version of the SAP Cloud Application Programming Model. I have implemented the service and it works fine when I use it with basic queries. However, when I try to use $groupby in my query, I get a not implemented error. I have checked the documentation and it seems that $groupby is supported in the latest version of the SAP Cloud SDK. I have also checked the implementation of the service and it seems that $groupby is not implemented in the code based approach. Is there a way to implement $groupby in the code based approach or is it only supported in the annotation based approach?","tags":["odata","abab"]},
+  {"id":3,"votes":5,"answers":2,"views":98,"title":" Activate and use 2FA with asp.net core","description":"I want to use 2FA on an asp.net core project. I can activate it with scanning QR code (image Activate 2FA on Google authenticator and then i put the 6 digit code and it works. Then I'm ...","tags":[".net-core","google-authenticator","google-2fa"]},
+  {"id":4,"votes":15,"answers":6,"views":210,"title":"How do I solve `malloc(): corrupted top size`?","description":"I was trying to make a symbolic table using C. Below is the excerpt of the code","tags":["c","malloc"]},
+  {"id":5,"votes":3,"answers":1,"views":64,"title":"FULL OUTER missing from previous year metric","description":"I have a table with a date dimension (month/year), other grouping dimensions, and a metric value. To compare with the previous year, I created a blendas suggested in this post: how to show value of ..","tags":["data-comparison","full-outer-join"]},
+  {"id":6,"votes":10,"answers":5,"views":176,"title":" What's the cause of data loss when synchronizing data using Oracle GoldenGate between two tables with columns in different data types?","description":" Given two Oracle tables, table_a and table_b, table_a contains one of the columns named ref_no_a with data type varchar2(100), table_b contains one of the columns named ref_no_b with data type ...","tags":["truncation","data-loss","varchar2","oracle-golden-gate"]},
+  {"id":7,"votes":7,"answers":2,"views":132,"title":"Cannot link custom static library [duplicate]","description":"I have three C++ files in the same folder workspace dir in Linux: functions hpp pragma once void print const char str void println const char str functions.cpp implementation of","tags":["c++","static-libraries","libraries"]},
+  {"id":8,"votes":6,"answers":1,"views":80,"title":"Code based implementation of an oData V4-Service throws not implemented when using $groupby","description":"Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...","tags":["Excel"]},
+  {"id":9,"votes":4,"answers":2,"views":95,"title":"Code based implementation of an oData V4-Service throws not implemented when using $groupby","description":"Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...","tags":["java"]},
+  {"id":10,"votes":9,"answers":3,"views":140,"title":"Code based implementation of an oData V4-Service throws not implemented when using $groupby","description":"Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...","tags":["java","code.org"]},
+  {"id":11,"votes":11,"answers":4,"views":188,"title":" Is it good design to use dynamic cast?","description":" I am trying to implement password manager on Java right now. I am implementing the vault. I have VaultEntry and VaultFolder classes. VaultEntry has fields id, parentId, name, username, email, password ...","tags":["java","oop"]}
+],
 
-    {
-      "id": 3,
-      "title": " Activate and use 2FA with asp.net core",
-      "description": "I want to use 2FA on an asp.net core project. I can activate it with scanning QR code (image Activate 2FA on Google authenticator and then i put the 6 digit code and it works. Then I'm ...",
-      "votes": 0,
-      "answers": 0,
-      "views": 6,
-      "tags": [".net-core", "google-authenticator", "google-2fa" ]
-      
-    },
+"unanswered": [
+  {"id":1,"votes":0,"answers":0,"views":22,"title":"AlarmManager with BroadcastReceiver not firing notifications","description":"Problem Description I am building a nutrition tracker app...","tags":["android","kotlin","push-notification","jetpack-compose"]},
+  {"id":2,"votes":1,"answers":0,"views":18,"title":"Code based implementation of an oData V4-Service throws not implemented when using $groupby","description":"Ich created an oData V4 Service last week and implemented the code based approach to create the service. I am using the latest version of the SAP Cloud SDK and the latest version of the SAP Cloud Application Programming Model. I have implemented the service and it works fine when I use it with basic queries. However, when I try to use $groupby in my query, I get a not implemented error. I have checked the documentation and it seems that $groupby is supported in the latest version of the SAP Cloud SDK. I have also checked the implementation of the service and it seems that $groupby is not implemented in the code based approach. Is there a way to implement $groupby in the code based approach or is it only supported in the annotation based approach?","tags":["odata","abab"]},
+  {"id":3,"votes":0,"answers":0,"views":15,"title":" Activate and use 2FA with asp.net core","description":"I want to use 2FA on an asp.net core project. I can activate it with scanning QR code (image Activate 2FA on Google authenticator and then i put the 6 digit code and it works. Then I'm ...","tags":[".net-core","google-authenticator","google-2fa"]},
+  {"id":4,"votes":-1,"answers":0,"views":10,"title":"How do I solve `malloc(): corrupted top size`?","description":"I was trying to make a symbolic table using C. Below is the excerpt of the code","tags":["c","malloc"]},
+  {"id":5,"votes":0,"answers":0,"views":12,"title":"FULL OUTER missing from previous year metric","description":"I have a table with a date dimension (month/year), other grouping dimensions, and a metric value. To compare with the previous year, I created a blendas suggested in this post: how to show value of ..","tags":["data-comparison","full-outer-join"]},
+  {"id":6,"votes":0,"answers":0,"views":9,"title":" What's the cause of data loss when synchronizing data using Oracle GoldenGate between two tables with columns in different data types?","description":" Given two Oracle tables, table_a and table_b, table_a contains one of the columns named ref_no_a with data type varchar2(100), table_b contains one of the columns named ref_no_b with data type ...","tags":["truncation","data-loss","varchar2","oracle-golden-gate"]},
+  {"id":7,"votes":1,"answers":0,"views":20,"title":"Cannot link custom static library [duplicate]","description":"I have three C++ files in the same folder workspace dir in Linux: functions hpp pragma once void print const char str void println const char str functions.cpp implementation of","tags":["c++","static-libraries","libraries"]},
+  {"id":8,"votes":0,"answers":0,"views":7,"title":"Code based implementation of an oData V4-Service throws not implemented when using $groupby","description":"Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...","tags":["Excel"]},
+  {"id":9,"votes":0,"answers":0,"views":11,"title":"Code based implementation of an oData V4-Service throws not implemented when using $groupby","description":"Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...","tags":["java"]},
+  {"id":10,"votes":0,"answers":0,"views":5,"title":"Code based implementation of an oData V4-Service throws not implemented when using $groupby","description":"Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...","tags":["java","code.org"]},
+  {"id":11,"votes":0,"answers":0,"views":14,"title":" Is it good design to use dynamic cast?","description":" I am trying to implement password manager on Java right now. I am implementing the vault. I have VaultEntry and VaultFolder classes. VaultEntry has fields id, parentId, name, username, email, password ...","tags":["java","oop"]}
+],
 
-    {
-      "id": 4,
-      "title": "How do I solve `malloc(): corrupted top size`?",
-      "description": "I was trying to make a symbolic table using C. Below is the excerpt of the code",
-      "votes": 0,
-      "answers": 0,
-      "views": 14,
-      "tags": ["c", "malloc"]
-    },
-    
-     {
-      "id": 5,
-      "title": "FULL OUTER missing from previous year metric",
-      "description": "I have a table with a date dimension (month/year), other grouping dimensions, and a metric value. To compare with the previous year, I created a blendas suggested in this post: how to show value of ..",
-      "votes": 0,
-      "answers": 0,
-      "views": 3,
-      "tags": ["data-comparison", "full-outer-join"]
-    },
-
-     {
-      "id": 6,
-      "title": " What's the cause of data loss when synchronizing data using Oracle GoldenGate between two tables with columns in different data types?",
-      "description": " Given two Oracle tables, table_a and table_b, table_a contains one of the columns named ref_no_a with data type varchar2(100), table_b contains one of the columns named ref_no_b with data type ...",
-      "votes": 0,
-      "answers": 0,
-      "views": 15,
-      "tags": ["truncation", "data-loss" , "varchar2" , "oracle-golden-gate"]
-    },
-    {
-     "id": 7,    
-    "title": "Cannot link custom static library [duplicate]",
-    "description": "I have three C++ files in the same folder workspace dir in Linux: functions hpp pragma once void print const char str void println const char str functions.cpp implementation of",
-    "votes": 0,
-    "answers": 0,
-    "views": 23,
-    "tags": ["c++", "static-libraries", "libraries"]
-    },
-  {
-    "id": 8,
-    "title": "Code based implementation of an oData V4-Service throws not implemented when using $groupby",
-    "description": "Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...",
-    "votes": 0,
-    "answers": 0,
-    "views": 18,
-    "tags" : ["Excel"]
-    },
-  {
-    "id": 9,
-    "title": "Code based implementation of an oData V4-Service throws not implemented when using $groupby",
-    "description": "Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...",
-    "votes": 0,
-    "answers": 0,
-    "views": 10,
-    "tags" : ["java"]
-  },
-
-  {
-    "id": 10,
-    "title": "Code based implementation of an oData V4-Service throws not implemented when using $groupby",
-    "description": "Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...",
-    "votes": 0,
-    "answers": 0,
-    "views": 2,
-    "tags" : ["java" ,"code.org"]
-  },
-    {
-    "id": 11,
-    "title": " Is it good design to use dynamic cast?",
-    "description": " I am trying to implement password manager on Java right now. I am implementing the vault. I have VaultEntry and VaultFolder classes. VaultEntry has fields id, parentId, name, username, email, password ...",
-    "votes": 0,
-    "answers": 0,
-    "views": 4,
-    "tags" : ["java" ,"oop"]
-  }
-  ],
-
-  "unanswered": [
-    {
-      "id": 1,
-      "title": "AlarmManager with BroadcastReceiver not firing notifications",
-      "description": "Problem Description I am building a nutrition tracker app...",
-      "votes": -1,
-      "answers": 0,
-      "views": 6,
-      "tags": ["android", "kotlin", "push-notification", "jetpack-compose"]
-    },
-    {
-      "id": 2,
-      "title": "Code based implementation of an oData V4-Service throws not implemented when using $groupby",
-      "description": "Ich created an oData V4 Service last week and implemented the code based approach to create the service. I am using the latest version of the SAP Cloud SDK and the latest version of the SAP Cloud Application Programming Model. I have implemented the service and it works fine when I use it with basic queries. However, when I try to use $groupby in my query, I get a not implemented error. I have checked the documentation and it seems that $groupby is supported in the latest version of the SAP Cloud SDK. I have also checked the implementation of the service and it seems that $groupby is not implemented in the code based approach. Is there a way to implement $groupby in the code based approach or is it only supported in the annotation based approach?",
-      "votes": 0,
-      "answers": 0,
-      "views": 7,
-      "tags": ["odata", "abab" ]
-      
-    },
-    
-
-    {
-      "id": 3,
-      "title": " Activate and use 2FA with asp.net core",
-      "description": "I want to use 2FA on an asp.net core project. I can activate it with scanning QR code (image Activate 2FA on Google authenticator and then i put the 6 digit code and it works. Then I'm ...",
-      "votes": 0,
-      "answers": 0,
-      "views": 6,
-      "tags": [".net-core", "google-authenticator", "google-2fa" ]
-      
-    },
-
-    {
-      "id": 4,
-      "title": "How do I solve `malloc(): corrupted top size`?",
-      "description": "I was trying to make a symbolic table using C. Below is the excerpt of the code",
-      "votes": 0,
-      "answers": 0,
-      "views": 14,
-      "tags": ["c", "malloc"]
-    },
-    
-     {
-      "id": 5,
-      "title": "FULL OUTER missing from previous year metric",
-      "description": "I have a table with a date dimension (month/year), other grouping dimensions, and a metric value. To compare with the previous year, I created a blendas suggested in this post: how to show value of ..",
-      "votes": 0,
-      "answers": 0,
-      "views": 3,
-      "tags": ["data-comparison", "full-outer-join"]
-    },
-
-     {
-      "id": 6,
-      "title": " What's the cause of data loss when synchronizing data using Oracle GoldenGate between two tables with columns in different data types?",
-      "description": " Given two Oracle tables, table_a and table_b, table_a contains one of the columns named ref_no_a with data type varchar2(100), table_b contains one of the columns named ref_no_b with data type ...",
-      "votes": 0,
-      "answers": 0,
-      "views": 15,
-      "tags": ["truncation", "data-loss" , "varchar2" , "oracle-golden-gate"]
-    },
-    {
-     "id": 7,    
-    "title": "Cannot link custom static library [duplicate]",
-    "description": "I have three C++ files in the same folder workspace dir in Linux: functions hpp pragma once void print const char str void println const char str functions.cpp implementation of",
-    "votes": 0,
-    "answers": 0,
-    "views": 23,
-    "tags": ["c++", "static-libraries", "libraries"]
-    },
-  {
-    "id": 8,
-    "title": "Code based implementation of an oData V4-Service throws not implemented when using $groupby",
-    "description": "Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...",
-    "votes": 0,
-    "answers": 0,
-    "views": 18,
-    "tags" : ["Excel"]
-    },
-  {
-    "id": 9,
-    "title": "Code based implementation of an oData V4-Service throws not implemented when using $groupby",
-    "description": "Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...",
-    "votes": 0,
-    "answers": 0,
-    "views": 10,
-    "tags" : ["java"]
-  },
-
-  {
-    "id": 10,
-    "title": "Code based implementation of an oData V4-Service throws not implemented when using $groupby",
-    "description": "Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...",
-    "votes": 0,
-    "answers": 0,
-    "views": 2,
-    "tags" : ["java" ,"code.org"]
-  },
-    {
-    "id": 11,
-    "title": " Is it good design to use dynamic cast?",
-    "description": " I am trying to implement password manager on Java right now. I am implementing the vault. I have VaultEntry and VaultFolder classes. VaultEntry has fields id, parentId, name, username, email, password ...",
-    "votes": 0,
-    "answers": 0,
-    "views": 4,
-    "tags" : ["java" ,"oop"]
-  }
-  ],
-
-  "bountied": [
-    {
-      "id": 1,
-      "title": "AlarmManager with BroadcastReceiver not firing notifications",
-      "description": "Problem Description I am building a nutrition tracker app...",
-      "votes": -1,
-      "answers": 0,
-      "views": 6,
-      "tags": ["android", "kotlin", "push-notification", "jetpack-compose"]
-    },
-    {
-      "id": 2,
-      "title": "Code based implementation of an oData V4-Service throws not implemented when using $groupby",
-      "description": "Ich created an oData V4 Service last week and implemented the code based approach to create the service. I am using the latest version of the SAP Cloud SDK and the latest version of the SAP Cloud Application Programming Model. I have implemented the service and it works fine when I use it with basic queries. However, when I try to use $groupby in my query, I get a not implemented error. I have checked the documentation and it seems that $groupby is supported in the latest version of the SAP Cloud SDK. I have also checked the implementation of the service and it seems that $groupby is not implemented in the code based approach. Is there a way to implement $groupby in the code based approach or is it only supported in the annotation based approach?",
-      "votes": 0,
-      "answers": 0,
-      "views": 7,
-      "tags": ["odata", "abab" ]
-      
-    },
-    
-
-    {
-      "id": 3,
-      "title": " Activate and use 2FA with asp.net core",
-      "description": "I want to use 2FA on an asp.net core project. I can activate it with scanning QR code (image Activate 2FA on Google authenticator and then i put the 6 digit code and it works. Then I'm ...",
-      "votes": 0,
-      "answers": 0,
-      "views": 6,
-      "tags": [".net-core", "google-authenticator", "google-2fa" ]
-      
-    },
-
-    {
-      "id": 4,
-      "title": "How do I solve `malloc(): corrupted top size`?",
-      "description": "I was trying to make a symbolic table using C. Below is the excerpt of the code",
-      "votes": 0,
-      "answers": 0,
-      "views": 14,
-      "tags": ["c", "malloc"]
-    },
-    
-     {
-      "id": 5,
-      "title": "FULL OUTER missing from previous year metric",
-      "description": "I have a table with a date dimension (month/year), other grouping dimensions, and a metric value. To compare with the previous year, I created a blendas suggested in this post: how to show value of ..",
-      "votes": 0,
-      "answers": 0,
-      "views": 3,
-      "tags": ["data-comparison", "full-outer-join"]
-    },
-
-     {
-      "id": 6,
-      "title": " What's the cause of data loss when synchronizing data using Oracle GoldenGate between two tables with columns in different data types?",
-      "description": " Given two Oracle tables, table_a and table_b, table_a contains one of the columns named ref_no_a with data type varchar2(100), table_b contains one of the columns named ref_no_b with data type ...",
-      "votes": 0,
-      "answers": 0,
-      "views": 15,
-      "tags": ["truncation", "data-loss" , "varchar2" , "oracle-golden-gate"]
-    },
-    {
-     "id": 7,    
-    "title": "Cannot link custom static library [duplicate]",
-    "description": "I have three C++ files in the same folder workspace dir in Linux: functions hpp pragma once void print const char str void println const char str functions.cpp implementation of",
-    "votes": 0,
-    "answers": 0,
-    "views": 23,
-    "tags": ["c++", "static-libraries", "libraries"]
-    },
-  {
-    "id": 8,
-    "title": "Code based implementation of an oData V4-Service throws not implemented when using $groupby",
-    "description": "Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...",
-    "votes": 0,
-    "answers": 0,
-    "views": 18,
-    "tags" : ["Excel"]
-    },
-  {
-    "id": 9,
-    "title": "Code based implementation of an oData V4-Service throws not implemented when using $groupby",
-    "description": "Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...",
-    "votes": 0,
-    "answers": 0,
-    "views": 10,
-    "tags" : ["java"]
-  },
-
-  {
-    "id": 10,
-    "title": "Code based implementation of an oData V4-Service throws not implemented when using $groupby",
-    "description": "Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...",
-    "votes": 0,
-    "answers": 0,
-    "views": 2,
-    "tags" : ["java" ,"code.org"]
-  },
-    {
-    "id": 11,
-    "title": " Is it good design to use dynamic cast?",
-    "description": " I am trying to implement password manager on Java right now. I am implementing the vault. I have VaultEntry and VaultFolder classes. VaultEntry has fields id, parentId, name, username, email, password ...",
-    "votes": 0,
-    "answers": 0,
-    "views": 4,
-    "tags" : ["java" ,"oop"]
-  }
-  ]
+"bountied": [
+  {"id":1,"votes":25,"answers":7,"views":420,"title":"AlarmManager with BroadcastReceiver not firing notifications","description":"Problem Description I am building a nutrition tracker app...","tags":["android","kotlin","push-notification","jetpack-compose"]},
+  {"id":2,"votes":18,"answers":5,"views":355,"title":"Code based implementation of an oData V4-Service throws not implemented when using $groupby","description":"Ich created an oData V4 Service last week and implemented the code based approach to create the service. I am using the latest version of the SAP Cloud SDK and the latest version of the SAP Cloud Application Programming Model. I have implemented the service and it works fine when I use it with basic queries. However, when I try to use $groupby in my query, I get a not implemented error. I have checked the documentation and it seems that $groupby is supported in the latest version of the SAP Cloud SDK. I have also checked the implementation of the service and it seems that $groupby is not implemented in the code based approach. Is there a way to implement $groupby in the code based approach or is it only supported in the annotation based approach?","tags":["odata","abab"]},
+  {"id":3,"votes":30,"answers":9,"views":510,"title":" Activate and use 2FA with asp.net core","description":"I want to use 2FA on an asp.net core project. I can activate it with scanning QR code (image Activate 2FA on Google authenticator and then i put the 6 digit code and it works. Then I'm ...","tags":[".net-core","google-authenticator","google-2fa"]},
+  {"id":4,"votes":22,"answers":6,"views":398,"title":"How do I solve `malloc(): corrupted top size`?","description":"I was trying to make a symbolic table using C. Below is the excerpt of the code","tags":["c","malloc"]},
+  {"id":5,"votes":14,"answers":3,"views":275,"title":"FULL OUTER missing from previous year metric","description":"I have a table with a date dimension (month/year), other grouping dimensions, and a metric value. To compare with the previous year, I created a blendas suggested in this post: how to show value of ..","tags":["data-comparison","full-outer-join"]},
+  {"id":6,"votes":19,"answers":4,"views":330,"title":" What's the cause of data loss when synchronizing data using Oracle GoldenGate between two tables with columns in different data types?","description":" Given two Oracle tables, table_a and table_b, table_a contains one of the columns named ref_no_a with data type varchar2(100), table_b contains one of the columns named ref_no_b with data type ...","tags":["truncation","data-loss","varchar2","oracle-golden-gate"]},
+  {"id":7,"votes":27,"answers":8,"views":470,"title":"Cannot link custom static library [duplicate]","description":"I have three C++ files in the same folder workspace dir in Linux: functions hpp pragma once void print const char str void println const char str functions.cpp implementation of","tags":["c++","static-libraries","libraries"]},
+  {"id":8,"votes":16,"answers":3,"views":240,"title":"Code based implementation of an oData V4-Service throws not implemented when using $groupby","description":"Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...","tags":["Excel"]},
+  {"id":9,"votes":21,"answers":5,"views":360,"title":"Code based implementation of an oData V4-Service throws not implemented when using $groupby","description":"Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...","tags":["java"]},
+  {"id":10,"votes":13,"answers":2,"views":210,"title":"Code based implementation of an oData V4-Service throws not implemented when using $groupby","description":"Ich created an oData V4 Service last week in our SAP-System and i want to implement the groubBy Argument. I tried it like this:?$top=5&$apply=groupby((Status),aggregate($count as COUNT)) just for ...","tags":["java","code.org"]},
+  {"id":11,"votes":24,"answers":6,"views":405,"title":" Is it good design to use dynamic cast?","description":" I am trying to implement password manager on Java right now. I am implementing the vault. I have VaultEntry and VaultFolder classes. VaultEntry has fields id, parentId, name, username, email, password ...","tags":["java","oop"]}
+]
 }
+  
