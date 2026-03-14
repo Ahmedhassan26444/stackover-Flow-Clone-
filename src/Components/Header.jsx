@@ -38,7 +38,7 @@ const Header = () => {
            transition mr-1 ">
           Try new site
           <span className="bg-[#4C59D9] text-white text-[10px]
-           font-bold px-2 py-0.3 rounded">
+           font-bold px-1 py-1 rounded">
             BETA
           </span>
         </button>
