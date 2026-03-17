@@ -14,10 +14,23 @@ const options = [
 const NewestQuestion = () => {
   const [activeSection, setActiveSection] = useState("newest");
   const [open, setOpen] = useState(false);
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [noAnswers, setNoAnswers] = useState(false);
+  const [sortedBy, setSortedBy] = useState("newest");
+  const [tagOption, setTagOption] = useState("following");
+
   const ref = useRef(null);
 
-  // ✅ only change here
-  const questions = data[activeSection];
+  let questions = data[activeSection];
+
+  if (
+    activeSection === "newest" &&
+    noAnswers &&
+    sortedBy === "newest" &&
+    tagOption === "following"
+  ) {
+    questions = questions.filter((q) => q.answers === 0);
+  }
 
   useEffect(() => {
     const handler = (e) => {
@@ -29,61 +42,59 @@ const NewestQuestion = () => {
 
   return (
     <div className="mb-4 mt-8">
-      {/* Row 1 */}
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-2xl font-semibold text-gray-800">
           Newest Questions
         </h1>
-        <button
-          className="bg-[#1976D2] text-white rounded-md 
-         px-2 py-2 mr-3 text-sm hover:bg-[#1565C0]"
-        >
+        <button className="bg-[#1976D2] text-white rounded-md px-2 py-2 mr-3 text-sm hover:bg-[#1565C0]">
           Ask Question
         </button>
       </div>
 
-      {/* Row 2 */}
       <div className="flex items-center justify-between pb-4">
         <p className="text-gray-700 text-lg">24,172,760 questions</p>
 
         <div className="flex items-center gap-2 mr-3">
           <div className="flex border border-gray-400 rounded-md overflow-visible text-[12px]">
-
             <button
               onClick={() => setActiveSection("newest")}
-              className={`px-3 py-1.5 ${activeSection === "newest" ? "bg-gray-200 font-medium" : ""}`}
+              className={`px-3 py-1.5 ${
+                activeSection === "newest" ? "bg-gray-200 font-medium" : ""
+              }`}
             >
               Newest
             </button>
 
             <button
               onClick={() => setActiveSection("active")}
-              className={`px-3 py-1.5 ${activeSection === "active" ? "bg-gray-200 font-medium" : ""}`}
+              className={`px-3 py-1.5 ${
+                activeSection === "active" ? "bg-gray-200 font-medium" : ""
+              }`}
             >
               Active
             </button>
 
             <button
               onClick={() => setActiveSection("bountied")}
-              className={`px-3 py-1.5 flex items-center ${activeSection === "bountied" ? "bg-gray-200 font-medium" : ""}`}
+              className={`px-3 py-1.5 flex items-center ${
+                activeSection === "bountied" ? "bg-gray-200 font-medium" : ""
+              }`}
             >
               <span className="mr-1">Bountied</span>
-              <span
-                className="bg-[#155CA2] text-white text-[11px]
-               px-1.5 py-0.5 rounded"
-              >
+              <span className="bg-[#155CA2] text-white text-[11px] px-1.5 py-0.5 rounded">
                 11
               </span>
             </button>
 
             <button
               onClick={() => setActiveSection("unanswered")}
-              className={`px-3 py-1.5 ${activeSection === "unanswered" ? "bg-gray-200 font-medium" : ""}`}
+              className={`px-3 py-1.5 ${
+                activeSection === "unanswered" ? "bg-gray-200 font-medium" : ""
+              }`}
             >
               Unanswered
             </button>
 
-            {/* More Dropdown */}
             <div className="relative" ref={ref}>
               <button
                 onClick={() => setOpen((o) => !o)}
@@ -96,7 +107,10 @@ const NewestQuestion = () => {
                 <div className="absolute left-0 mt-1 w-52 bg-white border border-gray-200 rounded shadow-lg z-50">
                   {options.map((opt, i) =>
                     opt === null ? (
-                      <div key={i} className="border-t border-gray-100 my-0.5" />
+                      <div
+                        key={i}
+                        className="border-t border-gray-100 my-0.5"
+                      />
                     ) : (
                       <div
                         key={opt.label}
@@ -111,20 +125,201 @@ const NewestQuestion = () => {
                 </div>
               )}
             </div>
-
           </div>
 
           <button
-            className="border border-blue-500 text-blue-500 px-2 
-          py-2 ml-2 rounded-md hover:bg-blue-50 flex items-center gap-1 text-sm"
+            onClick={() => setFilterOpen((o) => !o)}
+            className="border border-blue-500 text-blue-500 px-2 py-2 ml-2 rounded-md hover:bg-blue-50 flex items-center gap-1 text-sm"
           >
             ☰ Filter
           </button>
         </div>
       </div>
 
-      {/* Questions Render */}
-      {questions.map((question) => (
+      {filterOpen && (
+        <div className="border border-gray-300 rounded-md p-6 mb-4 bg-white">
+          <div className="grid grid-cols-3 gap-8">
+
+            {/* Filter by */}
+            <div>
+              <h3 className="text-[#3b4045] font-semibold mb-3">Filter by</h3>
+
+              <div className="flex flex-col gap-2 text-sm text-gray-700">
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    checked={noAnswers}
+                    onChange={(e) => setNoAnswers(e.target.checked)}
+                    className="accent-blue-600"
+                  />
+                  No answers
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input type="checkbox" className="accent-blue-600" />
+                  No upvoted or accepted answers
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input type="checkbox" className="accent-blue-600" />
+                  No Staging Ground
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input type="checkbox" className="accent-blue-600" />
+                  Has bounty
+                </label>
+
+                <div className="flex items-center gap-2 mt-1">
+                  <input
+                    type="text"
+                    className="border border-gray-300 rounded w-14 px-2 py-1 text-sm"
+                  />
+                  <span>Days old</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Sorted by */}
+            <div>
+              <h3 className="text-[#3b4045] font-semibold mb-3">Sorted by</h3>
+
+              <div className="flex flex-col gap-2 text-sm text-gray-700">
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="sortedBy"
+                    checked={sortedBy === "newest"}
+                    onChange={() => setSortedBy("newest")}
+                    className="accent-blue-600"
+                  />
+                  Newest
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="sortedBy"
+                    onChange={() => setSortedBy("recent")}
+                    className="accent-blue-600"
+                  />
+                  Recent activity
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="sortedBy"
+                    onChange={() => setSortedBy("score")}
+                    className="accent-blue-600"
+                  />
+                  Highest score
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="sortedBy"
+                    onChange={() => setSortedBy("frequent")}
+                    className="accent-blue-600"
+                  />
+                  Most frequent
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="sortedBy"
+                    onChange={() => setSortedBy("bounty")}
+                    className="accent-blue-600"
+                  />
+                  Bounty ending soon
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="sortedBy"
+                    onChange={() => setSortedBy("trending")}
+                    className="accent-blue-600"
+                  />
+                  Trending
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="sortedBy"
+                    onChange={() => setSortedBy("activity")}
+                    className="accent-blue-600"
+                  />
+                  Most activity
+                </label>
+              </div>
+            </div>
+
+            {/* Tagged with */}
+            <div>
+              <h3 className="text-[#3b4045] font-semibold mb-3">
+                Tagged with
+              </h3>
+
+              <div className="flex flex-col gap-2 text-sm text-gray-700">
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="taggedWith"
+                    onChange={() => setTagOption("watched")}
+                    className="accent-blue-600"
+                  />
+                  My watched tags
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="taggedWith"
+                    checked={tagOption === "following"}
+                    onChange={() => setTagOption("following")}
+                    className="accent-blue-600"
+                  />
+                  The following tags:
+                </label>
+
+                <input
+                  type="text"
+                  placeholder="e.g. javascript or python"
+                  className="border border-gray-300 rounded px-3 py-1.5 text-sm mt-1 w-full"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-between mt-6">
+            <div className="flex gap-2">
+              <button className="bg-[#1976D2] text-white px-4 py-1.5 rounded-md text-sm hover:bg-[#1565C0]">
+                Apply filter
+              </button>
+
+              <button className="border border-blue-500 text-blue-500 px-4 py-1.5 rounded-md text-sm hover:bg-blue-50">
+                Save custom filter
+              </button>
+            </div>
+
+            <button
+              onClick={() => setFilterOpen(false)}
+              className="text-blue-500 text-sm hover:text-blue-700 cursor-pointer"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
+
+      {questions?.map((question) => (
         <div
           key={question.id}
           className="flex flex-row gap-4 border-b border-gray-200 py-4 font-sans"
